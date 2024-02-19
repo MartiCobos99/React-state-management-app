@@ -1,4 +1,4 @@
-export const Staticline = ({ text, value }) => {
+export const Statisticline = ({ text, value }) => {
   return (
     <tr>
       <td>{text}</td>

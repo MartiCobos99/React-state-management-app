@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./Button";
-import { Staticline } from "./Staticline";
+import { Statisticline } from "./Statisticline";
 
 const App = () => {
   const [good, setGood] = useState(0);
@@ -54,12 +54,12 @@ const App = () => {
       ) : (
         <table>
           <tbody>
-            <Staticline text="Good" value={good} />
-            <Staticline text="Neutral" value={neutral} />
-            <Staticline text="Bad" value={bad} />
-            <Staticline text="All" value={feedbackTotal} />
-            <Staticline text="Average" value={feedbackAverage} />
-            <Staticline text="Positive" value={feedbackPositive} />
+            <Statisticline text="Good" value={good} />
+            <Statisticline text="Neutral" value={neutral} />
+            <Statisticline text="Bad" value={bad} />
+            <Statisticline text="All" value={feedbackTotal} />
+            <Statisticline text="Average" value={feedbackAverage} />
+            <Statisticline text="Positive" value={feedbackPositive} />
           </tbody>
         </table>
       )}
